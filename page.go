@@ -5,8 +5,8 @@ type PageRes struct {
 }
 type PageReq struct {
 	limit  int
-	Page   int               `json:"page" dc:"页码"`
-	Size   int               `json:"size" dc:"分页"`
+	Page   int               `json:"current" dc:"页码"`
+	Size   int               `json:"pageSize" dc:"分页"`
 	Sorter map[string]string `json:"sorter" dc:"排序规则"`
 }
 
